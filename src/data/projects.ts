@@ -77,4 +77,38 @@ export const projects: Project[] = [
     techStack: ["React", "TypeScript", "Supabase", "PostgreSQL", "REST APIs"],
     outcome: "Simplified school operations and improved visibility into academic performance.",
   },
+  {
+    slug: "rfspectron",
+    title: "RFSpectron",
+    tagline: "Modular SaaS for Operations, Analytics & Automation",
+    category: "SaaS",
+    description:
+      "A scalable business management platform designed to centralize operations, analytics, and automation for growing companies. The system provides configurable modules for data management, reporting, and workflow automation, enabling organizations to streamline internal processes and make data-driven decisions.",
+    features: [
+      "Modular dashboard architecture",
+      "Role-based access control",
+      "Workflow automation & task management",
+      "Real-time analytics & reporting",
+      "Secure multi-tenant architecture",
+    ],
+    techStack: ["React", "TypeScript", "Supabase", "PostgreSQL", "REST APIs"],
+    outcome: "Improved operational visibility and reduced manual overhead for internal teams.",
+  },
+  {
+    slug: "private-hire-club",
+    title: "Private Hire Club",
+    tagline: "End-to-End Private Hire & Chauffeur Service System",
+    category: "Transport",
+    description:
+      "A premium booking and management platform for private hire and chauffeur services, enabling customers to book rides seamlessly while providing operators with tools to manage drivers, vehicles, schedules, and payments.",
+    features: [
+      "Customer booking & journey management",
+      "Driver & vehicle management system",
+      "Admin dashboard with analytics",
+      "Secure payments & invoicing",
+      "Role-based access",
+    ],
+    techStack: ["React", "TypeScript", "Supabase", "PostgreSQL", "REST APIs"],
+    outcome: "Streamlined operations and enhanced customer booking experience.",
+  },
 ];
