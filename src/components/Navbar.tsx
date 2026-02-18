@@ -23,7 +23,11 @@ const Navbar = () => {
 
   const handleClick = (href: string) => {
     setMobileOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    // Delay scroll until menu close animation finishes - fixes mobile nav clicks
+    setTimeout(() => {
+      const el = document.querySelector(href);
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 350);
   };
 
   return (
@@ -84,7 +88,7 @@ const Navbar = () => {
                 <button
                   key={item.label}
                   onClick={() => handleClick(item.href)}
-                  className="text-left text-muted-foreground hover:text-primary transition-colors"
+                  className="text-left py-3 min-h-[44px] w-full text-muted-foreground hover:text-primary transition-colors"
                 >
                   {item.label}
                 </button>

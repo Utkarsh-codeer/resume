@@ -49,11 +49,11 @@ const ContactSection = () => {
             className="space-y-6"
           >
             {[
-              { icon: Mail, label: "Email", value: "reetilakhotia@gmail.com", href: "mailto:reetilakhotia@gmail.com" },
-              { icon: Phone, label: "Phone", value: "+91 7068701762", href: "tel:+917068701762" },
+              { icon: Mail, label: "Email", value: "utkarsh@transcendi.co", href: "mailto:utkarsh@transcendi.co" },
+              { icon: Phone, label: "Phone", value: "+91 9369182659", href: "tel:+919369182659" },
               { icon: MapPin, label: "Location", value: "Prayagraj, India", href: "#" },
               { icon: Linkedin, label: "LinkedIn", value: "Utkarsh Lakhotia", href: "https://www.linkedin.com/in/utkarsh-lakhotia-3a597a352" },
-              { icon: Globe, label: "Portfolio", value: "utkarsh-codeer.github.io", href: "https://utkarsh-codeer.github.io/Utkarsh" },
+              { icon: Globe, label: "Portfolio", value: "utkarsh-codeer.github.io", href: "https://utkarsh-codeer.github.io/resume" },
             ].map(({ icon: Icon, label, value, href }) => (
               <a
                 key={label}
