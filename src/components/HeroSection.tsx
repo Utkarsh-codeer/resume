@@ -28,7 +28,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
-            Full Stack Engineer · AI Specialist · Founder
+            Full Stack Engineer · AI Specialist · Senior Developer
           </p>
         </motion.div>
 
