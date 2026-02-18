@@ -1,13 +1,19 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Globe } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import NeuralBackground from "@/components/ui/flow-field-background";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
+      {/* Flow field background */}
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-40" />
+        <NeuralBackground
+          className="absolute inset-0"
+          color="#2dd4bf"
+          trailOpacity={0.1}
+          particleCount={600}
+          speed={0.8}
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
       </div>
 
