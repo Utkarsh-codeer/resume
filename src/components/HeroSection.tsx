@@ -83,8 +83,8 @@ const HeroSection = () => {
         >
           {[
             { icon: Linkedin, href: "https://www.linkedin.com/in/utkarsh-lakhotia-3a597a352", label: "LinkedIn" },
-            { icon: Globe, href: "https://utkarsh-codeer.github.io/Utkarsh", label: "Portfolio" },
-            { icon: Github, href: "#", label: "GitHub" },
+            { icon: Globe, href: "https://utkarsh-codeer.github.io/resume", label: "Portfolio" },
+            { icon: Github, href: "https://github.com/utkarsh-codeer", label: "GitHub" },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
