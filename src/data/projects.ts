@@ -129,4 +129,23 @@ export const projects: Project[] = [
   techStack: ["Python", "NumPy", "Matplotlib"],
   outcome: "97.85% test accuracy on 10,000 unseen images. No ML frameworks used at any stage.",
   },
+  {
+  slug: "conditional-vae",
+  title: "Conditional Variational Autoencoder",
+  tagline: "Generative Model for Controlled Handwritten Digit Synthesis",
+  category: "AI / ML",
+  description:
+    "A Variational Autoencoder (VAE) and Conditional VAE built from scratch in PyTorch, trained on MNIST to generate new handwritten digits on demand. Implements the full generative pipeline: probabilistic encoding via the reparameterisation trick, KL divergence regularisation, and label-conditioned decoding. The model generates digit samples that never existed in the training set, interpolates smoothly between digits in latent space, and supports controlled generation by digit class.",
+  features: [
+    "Probabilistic encoder outputting μ and σ per sample — not a fixed point",
+    "Reparameterisation trick enabling gradient flow through stochastic sampling",
+    "KL divergence loss forcing a smooth, structured latent space",
+    "Conditional generation — specify any digit 0–9 and generate variations",
+    "Latent space interpolation — smooth morphing between two digit classes",
+    "Worst-reconstruction analysis identifying failure modes by loss",
+  ],
+  techStack: ["Python", "PyTorch", "NumPy", "Matplotlib"],
+  outcome:
+    "Final loss of 99.17 (train) / 99.16 (test). Controlled generation of all 10 digit classes from pure Gaussian noise. Zero overfitting across 20 epochs.",
+  },
 ];
