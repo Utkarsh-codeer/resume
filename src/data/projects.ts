@@ -111,4 +111,22 @@ export const projects: Project[] = [
     techStack: ["React", "TypeScript", "Supabase", "PostgreSQL", "REST APIs"],
     outcome: "Streamlined operations and enhanced customer booking experience.",
   },
+  {
+  slug: "mnist-neural-network",
+  title: "MNIST Digit Classifier",
+  tagline: "Feedforward Neural Network Built from Scratch — No ML Frameworks",
+  category: "AI / ML",
+  description:
+    "A fully functional feedforward neural network trained on 70,000 handwritten digit images, implemented entirely from first principles in Python and NumPy. Every component — forward propagation, cross-entropy loss, backpropagation via the chain rule, and mini-batch gradient descent — was written without TensorFlow, PyTorch, or any ML framework. Training loss fell from 2.3026 (the theoretical random baseline for a 10-class classifier) to 0.0101 over 20 epochs.",
+  features: [
+    "Forward propagation with ReLU (hidden) and Softmax (output) activations",
+    "Cross-entropy loss with numerical stability via log-clipping",
+    "Backpropagation from scratch using the chain rule, layer by layer",
+    "Mini-batch gradient descent with epoch shuffling (batch size 64, lr 0.1)",
+    "Training visualisation — loss curves, accuracy curves, sample predictions",
+    "Full technical documentation of every mathematical and engineering decision",
+  ],
+  techStack: ["Python", "NumPy", "Matplotlib"],
+  outcome: "97.85% test accuracy on 10,000 unseen images. No ML frameworks used at any stage.",
+  },
 ];
