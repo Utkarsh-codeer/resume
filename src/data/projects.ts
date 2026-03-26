@@ -27,6 +27,40 @@ export const projects: Project[] = [
     techStack: ["React", "Capacitor", "TypeScript", "Supabase", "PostgreSQL", "REST APIs"],
     outcome: "Production-ready system supporting real-world business operations.",
   },
+
+  {
+  slug: "jarvis",
+  title: "Jarvis — Personal AI Assistant",
+  tagline: "Full-Stack AI Infrastructure for Complete Device Control via Natural Language",
+  category: "AI Infrastructure",
+  description:
+    "A production-grade personal AI assistant built entirely from scratch — no existing assistant frameworks used. Jarvis accepts natural language commands and executes real actions across two devices, six cloud services, and 100+ tools. The system runs a local LLaMA 3.1 brain via Groq, routes commands to the correct tool in under 2 seconds, and controls everything from WhatsApp messages to Android phone settings to Spotify playback — all from a single text or voice prompt.\n\nEvery component — the LLM interface, tool router, Google API integrations, WhatsApp Web automation, ADB phone bridge, and memory system — was designed and implemented from scratch.",
+  features: [
+    "LLaMA 3.1 brain with structured JSON tool-calling — routes 100+ tools accurately",
+    "Google integrations: Gmail, Calendar, Drive — read, write, send, search",
+    "WhatsApp Web automation via Playwright — fuzzy contact matching, no API needed",
+    "Full macOS system control: volume, brightness, clipboard, WiFi, screen recording",
+    "Spotify control via AppleScript — play, search, shuffle, repeat — no Premium required",
+    "Android phone control via ADB WiFi — 55+ capabilities including calls, SMS, app control",
+    "Smart UI Automator — clicks phone elements by text, no screen coordinates needed",
+    "Persistent SQLite memory — conversation history + permanent facts store",
+    "100-test automated test suite with section breakdown and full error logs",
+  ],
+  techStack: [
+    "Python",
+    "LLaMA 3.1",
+    "Groq",
+    "Playwright",
+    "ADB",
+    "Google APIs",
+    "AppleScript",
+    "SQLite",
+    "FastAPI",
+  ],
+  outcome:
+    "100% automated test pass rate across 11 tool categories. Sub-2s response time. Controls MacBook Pro + Samsung Android from a single natural language interface. 100+ tools live in production.",
+  },
+
   {
     slug: "anishka-collections",
     title: "AnishkaCollections",
@@ -148,4 +182,5 @@ export const projects: Project[] = [
   outcome:
     "Final loss of 99.17 (train) / 99.16 (test). Controlled generation of all 10 digit classes from pure Gaussian noise. Zero overfitting across 20 epochs.",
   },
+  
 ];
